@@ -1,8 +1,15 @@
+import { Footer, Navbar, TaskEntry, TaskList } from "./components";
+
 function App() {
 
   return (
     <>
-      React Todo list
+      <Navbar />
+      <main>
+        <TaskEntry />
+        <TaskList />
+      </main>
+      <Footer />
     </>
   )
 }
