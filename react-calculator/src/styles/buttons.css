@@ -1,0 +1,11 @@
+.numBtn {
+  @apply text-lg rounded-lg w-full h-full flex justify-center items-center font-bold;
+}
+
+.splBtn {
+  @apply text-lg rounded-lg w-full h-full flex justify-center items-center font-bold;
+}
+
+.enterBtn {
+  @apply text-lg rounded-lg w-full h-full flex justify-center items-center font-bold;
+}
