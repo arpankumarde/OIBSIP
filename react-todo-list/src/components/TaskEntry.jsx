@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-const TaskEntry = () => {
-  const [tasks, setTasks] = useState([]);
+const TaskEntry = ({ tasks, setTasks }) => {
   const [inputs, setInputs] = useState({});
 
   const handleChange = (event) => {
@@ -15,6 +14,7 @@ const TaskEntry = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // alert(inputs);
+    setInputs(inputs.status = false)
     console.log(inputs);
     setTasks(prev => [...prev, inputs]);
     setInputs({});
