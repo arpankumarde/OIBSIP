@@ -9,17 +9,26 @@ html {
 }
 
 body {
-  @apply bg-pink-300 h-screen w-screen;
+  @apply bg-[#364F60] h-screen w-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg?cs=srgb&dl=pexels-guilherme-rossi-1755683.jpg&fm=jpg&w=1920&h=2560')];
 }
 
 main {
-  @apply bg-yellow-600 h-[80vh] w-screen overflow-auto flex;
+  @apply h-[86vh] w-screen overflow-auto flex;
 }
 
 nav {
-  @apply bg-blue-300 h-[10vh] w-screen flex justify-between;
+  @apply h-[8vh] w-screen flex justify-between;
 }
 
 footer {
-  @apply bg-green-400 h-[10vh] w-screen flex justify-center items-center;
+  @apply h-[6vh] w-screen flex justify-center items-center;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
