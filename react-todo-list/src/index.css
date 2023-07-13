@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  @apply font-ubuntu;
+  @apply font-ubuntu text-lg;
 }
 
 body {
