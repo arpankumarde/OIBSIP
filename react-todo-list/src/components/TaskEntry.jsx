@@ -15,15 +15,15 @@ const TaskEntry = ({ tasks, setTasks }) => {
     event.preventDefault();
     // alert(inputs);
     setInputs(inputs.status = false)
-    console.log(inputs);
+    // console.log(inputs);
     setTasks(prev => [...prev, inputs]);
     setInputs({});
-    console.log(tasks);
+    // console.log(tasks);
   }
 
   return (
     <div className='w-1/3 flex justify-center items-center'>
-      <div className="backdrop-blur-sm bg-[#ffffff21] p-4 rounded-lg w-2/3">
+      <div className="backdrop-blur-sm bg-[#ffffff21] p-4 rounded-lg w-3/4">
         <form onSubmit={handleSubmit} className='flex flex-col gap-4' autoComplete='disabled'>
           <fieldset className='flex flex-col'>
             <span className='text-slate-100 font-semibold'>Title</span>
