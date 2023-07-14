@@ -24,6 +24,8 @@ const TaskEntry = ({ tasks, setTasks }) => {
   return (
     <div className='w-1/3 flex justify-center items-center'>
       <div className="backdrop-blur-sm bg-[#ffffff21] p-4 rounded-lg w-3/4">
+        <h2 className='text-slate-100 font-bold text-xl text-center'>Add tasks</h2>
+        <hr className='my-2 border-0 h-px bg-slate-300' />
         <form onSubmit={handleSubmit} className='flex flex-col gap-4' autoComplete='disabled'>
           <fieldset className='flex flex-col'>
             <span className='text-slate-100 font-semibold'>Title</span>

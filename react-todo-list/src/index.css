@@ -17,7 +17,7 @@ main {
 }
 
 nav {
-  @apply h-[8vh] w-screen flex justify-between;
+  @apply h-[8vh] w-screen flex justify-normal;
 }
 
 footer {
