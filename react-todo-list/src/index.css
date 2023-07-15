@@ -9,19 +9,7 @@ html {
 }
 
 body {
-  @apply bg-[#364F60] h-screen w-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg?cs=srgb&dl=pexels-guilherme-rossi-1755683.jpg&fm=jpg&w=1920&h=2560')];
-}
-
-main {
-  @apply h-[86vh] w-screen overflow-auto flex;
-}
-
-nav {
-  @apply h-[8vh] w-screen flex justify-normal;
-}
-
-footer {
-  @apply h-[6vh] w-screen flex justify-center items-center;
+  @apply bg-[#364F60] min-h-screen lg:h-screen w-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg?cs=srgb&dl=pexels-guilherme-rossi-1755683.jpg&fm=jpg&w=1920&h=2560')];
 }
 
 .scrollbar-hide::-webkit-scrollbar {

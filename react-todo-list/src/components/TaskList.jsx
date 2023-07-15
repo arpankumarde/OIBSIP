@@ -17,18 +17,18 @@ const TaskList = ({ tasks, setTasks }) => {
   }
 
   return (
-    <section className='w-2/3 flex items-center justify-center px-16'>
-      <div className="container backdrop-blur-sm bg-[#ffffff21] max-h-[86vh] p-4 rounded-lg">
+    <section className='flex items-center justify-center w-full lg:w-2/3 px-4 lg:px-16'>
+      <div className="container backdrop-blur-sm bg-[#00000021] lg:bg-[#ffffff21] lg:max-h-[86vh] p-4 rounded-lg">
         <h2 className='text-slate-100 font-bold text-xl mb-3'>TaskList</h2>
-        <div className='overflow-auto max-h-[75vh] flex flex-col gap-3 rounded-lg scrollbar-hide'>
+        <div className='overflow-auto lg:max-h-[75vh] flex flex-col gap-3 rounded-lg scrollbar-hide'>
           {!tasks.length == 0 ?
             (tasks.map((value, key) => (
-              <div key={key} className='flex justify-between items-center gap-4 p-4 bg-white rounded-lg'>
-                <div className='bg-yelow-300 h-full w-2/3'>
+              <div key={key} className='flex flex-col lg:flex-row justify-between lg:items-center gap-2 lg:gap-4 p-4 bg-white rounded-lg'>
+                <div className='h-full w-full lg:w-2/3'>
                   <div className='font-semibold'>{value.title}</div>
                   <div className='text-sm text-gray-800 text-justify'>{value.desc}</div>
                 </div>
-                <div className="flex w-1/3 justify-between items-center">
+                <div className="flex w-full lg:w-1/3 justify-around items-center">
                   <span className={`${value.status ? 'bg-green-300 text-green-950' : 'bg-red-300 text-red-950'} w-20 flex justify-center rounded-full px-2 py-1 text-xs`}>
                     {value.status ? 'Complete' : 'Incomplete'}
                   </span>
