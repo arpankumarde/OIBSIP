@@ -6,14 +6,11 @@ const TaskEntry = ({ tasks, setTasks }) => {
   const handleChange = (event) => {
     const name = event.target.name.replace(/\s{2,}/g, ' ').trim();
     const value = event.target.value;
-    // console.log("in here")
-    // console.log(inputs)
     setInputs(values => ({ ...values, [name]: value }))
   }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // alert(inputs);
     setInputs(inputs.status = false)
     // console.log(inputs);
     setTasks(prev => [...prev, inputs]);
@@ -23,7 +20,7 @@ const TaskEntry = ({ tasks, setTasks }) => {
 
   return (
     <div className='w-full lg:w-1/3 flex justify-center items-center px-4 lg:px-0'>
-      <div className="backdrop-blur-sm bg-[#00000021] lg:bg-[#ffffff21] p-4 rounded-lg w-full lg:w-3/4">
+      <div className="backdrop-blur-sm bg-[#0000002f] lg:bg-[#ffffff21] p-4 rounded-lg w-full lg:w-3/4">
         <h2 className='text-slate-100 font-bold text-xl text-center'>Add tasks</h2>
         <hr className='my-2 border-0 h-px bg-slate-300' />
         <form onSubmit={handleSubmit} className='flex flex-col gap-4' autoComplete='disabled'>

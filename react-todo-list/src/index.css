@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @apply bg-[#364F60] min-h-screen lg:h-screen w-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg?cs=srgb&dl=pexels-guilherme-rossi-1755683.jpg&fm=jpg&w=1920&h=2560')];
+  @apply bg-[#364F60] min-h-screen lg:h-screen w-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?cs=srgb&dl=pexels-lisa-fotios-1083822.jpg&fm=jpg&w=1280&h=853')] lg:bg-[url('https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg?cs=srgb&dl=pexels-guilherme-rossi-1755683.jpg&fm=jpg&w=1920&h=2560')];
 }
 
 .scrollbar-hide::-webkit-scrollbar {

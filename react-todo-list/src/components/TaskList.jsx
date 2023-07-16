@@ -11,15 +11,14 @@ const TaskList = ({ tasks, setTasks }) => {
   };
 
   const delTask = (id) => {
-    console.log(id);
     let c = 0;
     setTasks(tasks.filter(item => c++ !== id));
   }
 
   return (
     <section className='flex items-center justify-center w-full lg:w-2/3 px-4 lg:px-16'>
-      <div className="container backdrop-blur-sm bg-[#00000021] lg:bg-[#ffffff21] lg:max-h-[86vh] p-4 rounded-lg">
-        <h2 className='text-slate-100 font-bold text-xl mb-3'>TaskList</h2>
+      <div className="container backdrop-blur-sm bg-[#0000002f] lg:bg-[#ffffff21] min-h-[15rem] lg:min-h-[10rem] lg:max-h-[86vh] p-4 rounded-lg">
+        <h2 className='text-slate-100 font-bold text-xl mb-3 text-center'>TaskList</h2>
         <div className='overflow-auto lg:max-h-[75vh] flex flex-col gap-3 rounded-lg scrollbar-hide'>
           {!tasks.length == 0 ?
             (tasks.map((value, key) => (
@@ -48,7 +47,7 @@ const TaskList = ({ tasks, setTasks }) => {
                 </div>
               </div>
             )))
-            : <span className='text-slate-100'>No data to show</span>}
+            : <span className='text-slate-200 text-center'>No data to show</span>}
           <Tooltip id="action-tooltip" style={{ backgroundColor: '#000000cd', borderRadius: '0.5rem', paddingTop: '2.5px', paddingBottom: '2.5px' }} />
         </div>
       </div>
